@@ -3,6 +3,7 @@ import { Navbar9 } from "./components/Navbar9";
 import { Header111 } from "./components/Header111";
 import { Layout356 } from "./components/Layout356";
 import { Layout254 } from "./components/Layout254";
+import { PartnerLogos } from "./components/PartnerLogos";
 import { Testimonial15 } from "./components/Testimonial15";
 import { Faq2 } from "./components/Faq2";
 import { Cta31 } from "./components/Cta31";
@@ -16,6 +17,7 @@ export default function Page() {
       <Header111 />
       <Layout356 />
       <Layout254 />
+      <PartnerLogos />
       <Testimonial15 />
       <Faq2 />
       <Cta31 />

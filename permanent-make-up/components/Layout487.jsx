@@ -34,8 +34,12 @@ export function Layout487() {
               style={{ fontFamily: "Jost, sans-serif", fontWeight: 300, fontSize: "0.9375rem", lineHeight: 1.8, color: "rgba(250,248,244,0.6)", maxWidth: "46ch" }}>
               Jedes Ergebnis ist absolut natürlich — niemand sieht, dass du Permanent Make-up trägst. Das ist das Ziel jedes einzelnen Termins bei Contour Beauty.
             </p>
-            <a href="/kontakt" className="cb-btn-primary"
-              style={{ backgroundColor: "var(--cb-cream)", color: "var(--cb-charcoal)", borderColor: "var(--cb-cream)" }}>
+            <a
+              href="https://tidycal.com/contour-beauty/beratungstermin"
+              data-tidycal-path="contour-beauty/beratungstermin"
+              className="cb-btn-primary"
+              style={{ backgroundColor: "var(--cb-cream)", color: "var(--cb-charcoal)", borderColor: "var(--cb-cream)" }}
+            >
               Termin buchen
             </a>
           </div>

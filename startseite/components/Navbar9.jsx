@@ -14,9 +14,9 @@ export function Navbar9() {
   }, []);
 
   const navLinks = [
-    { href: "/hautbehandlungen", label: "Hautbehandlungen" },
     { href: "/permanent-make-up", label: "Permanent Make-up" },
-    { href: "/über-uns", label: "Über uns" },
+    { href: "/hautbehandlungen", label: "Hautbehandlungen" },
+    { href: "/über-uns", label: "Über mich" },
     { href: "/kontakt", label: "Kontakt" },
   ];
 
@@ -30,17 +30,15 @@ export function Navbar9() {
       }}
     >
       <nav className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-8 md:px-12 lg:px-16">
-        {/* Logo */}
         <a href="/" className="flex items-center">
           <img
             src="/images/logo.png"
             alt="Contour Beauty"
-            className="h-9 w-auto"
+            className="h-12 w-auto"
             style={{ filter: scrolled ? "none" : "brightness(0) invert(1)" }}
           />
         </a>
 
-        {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="cb-nav-link"
@@ -50,10 +48,11 @@ export function Navbar9() {
           ))}
         </div>
 
-        {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href="/kontakt"
+            href="https://tidycal.com/contour-beauty"
+            target="_blank"
+            rel="noopener noreferrer"
             className="cb-btn-primary"
             style={scrolled ? {} : {
               backgroundColor: "transparent",
@@ -65,7 +64,6 @@ export function Navbar9() {
           </a>
         </div>
 
-        {/* Mobile toggle */}
         <button
           className="flex lg:hidden flex-col items-center justify-center gap-1.5 w-10 h-10"
           onClick={() => setIsMobileMenuOpen((p) => !p)}
@@ -92,7 +90,6 @@ export function Navbar9() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -120,7 +117,12 @@ export function Navbar9() {
                 {link.label}
               </motion.a>
             ))}
-            <a href="/kontakt" className="cb-btn-primary mt-2 self-start">
+            <a
+              href="https://tidycal.com/contour-beauty"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cb-btn-primary mt-2 self-start"
+            >
               Termin buchen
             </a>
           </motion.div>

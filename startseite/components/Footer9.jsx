@@ -21,7 +21,7 @@ export function Footer9() {
               <img
                 src="/images/logo.png"
                 alt="Contour Beauty"
-                className="h-8 w-auto"
+                className="h-12 w-auto"
                 style={{ filter: "brightness(0) invert(1)" }}
               />
             </a>
@@ -35,12 +35,12 @@ export function Footer9() {
                 maxWidth: "30ch",
               }}
             >
-              Reviderm-Hautbehandlungen und Permanent Make-up in Hamburg.
+              Reviderm-Hautbehandlungen und Permanent Make-up in Geesthacht bei Hamburg.
               Schönheit, die bleibt.
             </p>
             <div className="flex gap-3 mt-6">
               <a
-                href="https://www.instagram.com/contourbeautyhh/"
+                href="https://www.instagram.com/contour_beauty.de/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-70"
@@ -49,7 +49,9 @@ export function Footer9() {
                 <BiLogoInstagram size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/ContourBeautyHamburg/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="transition-opacity hover:opacity-70"
                 style={{ color: "rgba(250,248,244,0.6)" }}
               >
@@ -75,9 +77,9 @@ export function Footer9() {
             </h4>
             <ul className="space-y-3">
               {[
-                ["Hautbehandlungen", "/hautbehandlungen"],
                 ["Permanent Make-up", "/permanent-make-up"],
-                ["Über uns", "/über-uns"],
+                ["Hautbehandlungen", "/hautbehandlungen"],
+                ["Über mich", "/über-uns"],
                 ["Kontakt", "/kontakt"],
               ].map(([label, href]) => (
                 <li key={href}>
@@ -165,14 +167,23 @@ export function Footer9() {
                 fontStyle: "normal",
               }}
             >
-              Contour Beauty Hamburg<br />
-              Hamburg, Deutschland<br />
-              <a href="mailto:info@contour-beauty.de" className="hover:text-cb-cream transition-colors" style={{ color: "rgba(250,248,244,0.6)", textDecoration: "none" }}>
-                info@contour-beauty.de
+              Contour Beauty<br />
+              An der Promenade 3<br />
+              21502 Geesthacht<br />
+              <a href="tel:+491724106646" className="hover:text-cb-cream transition-colors" style={{ color: "rgba(250,248,244,0.6)", textDecoration: "none" }}>
+                0172 410 66 46
+              </a><br />
+              <a href="mailto:mail@contour-beauty.de" className="hover:text-cb-cream transition-colors" style={{ color: "rgba(250,248,244,0.6)", textDecoration: "none" }}>
+                mail@contour-beauty.de
               </a>
             </address>
-            <a href="/kontakt" className="cb-btn-light mt-6 inline-flex"
-              style={{ fontSize: "0.75rem", padding: "0.625rem 1.5rem" }}>
+            <a
+              href="https://tidycal.com/contour-beauty"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cb-btn-light mt-6 inline-flex"
+              style={{ fontSize: "0.75rem", padding: "0.625rem 1.5rem" }}
+            >
               Termin buchen
             </a>
           </div>
@@ -188,7 +199,7 @@ export function Footer9() {
               color: "rgba(250,248,244,0.3)",
             }}
           >
-            © 2025 Contour Beauty Hamburg. Alle Rechte vorbehalten.
+            © 2025 Contour Beauty. Alle Rechte vorbehalten.
           </p>
           <p
             style={{

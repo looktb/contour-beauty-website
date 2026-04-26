@@ -66,8 +66,12 @@ export function Layout239() {
         </div>
 
         <div className="mt-14">
-          <a href="/kontakt" className="cb-btn-primary"
-            style={{ backgroundColor: "var(--cb-cream)", color: "var(--cb-charcoal)", borderColor: "var(--cb-cream)" }}>
+          <a
+            href="https://tidycal.com/contour-beauty/first-time-treatment"
+            data-tidycal-path="contour-beauty/first-time-treatment"
+            className="cb-btn-primary"
+            style={{ backgroundColor: "var(--cb-cream)", color: "var(--cb-charcoal)", borderColor: "var(--cb-cream)" }}
+          >
             Termin buchen
           </a>
         </div>

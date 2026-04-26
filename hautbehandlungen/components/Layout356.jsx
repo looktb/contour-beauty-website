@@ -92,7 +92,13 @@ export function Layout356() {
               <p style={{ fontFamily: "Jost, sans-serif", fontWeight: 300, fontSize: "0.9375rem", lineHeight: 1.8, color: "var(--cb-muted)" }}>
                 {step.description}
               </p>
-              <a href="/kontakt" className="cb-btn-primary mt-8 inline-flex">Termin buchen</a>
+              <a
+                href="https://tidycal.com/contour-beauty/first-time-treatment"
+                data-tidycal-path="contour-beauty/first-time-treatment"
+                className="cb-btn-primary mt-8 inline-flex"
+              >
+                Termin buchen
+              </a>
             </div>
             <div className="cb-img-zoom" style={{ borderRadius: "2px", overflow: "hidden" }}>
               <img key={activeStep} src={step.image} alt={step.title}

@@ -50,7 +50,10 @@ export function Cta31() {
             bedeutet — individuell, wissenschaftlich, in Hamburg.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="/kontakt" className="cb-btn-primary"
+            <a
+              href="https://tidycal.com/contour-beauty"
+              data-tidycal-path="contour-beauty"
+              className="cb-btn-primary"
               style={{
                 backgroundColor: "var(--cb-cream)",
                 color: "var(--cb-charcoal)",

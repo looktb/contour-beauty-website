@@ -49,7 +49,13 @@ export function Layout463() {
         </div>
 
         <div className="mt-14">
-          <a href="/kontakt" className="cb-btn-primary">Termin vereinbaren</a>
+          <a
+            href="https://tidycal.com/contour-beauty/beratungstermin"
+            data-tidycal-path="contour-beauty/beratungstermin"
+            className="cb-btn-primary"
+          >
+            Termin vereinbaren
+          </a>
         </div>
       </div>
     </section>

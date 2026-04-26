@@ -2,6 +2,12 @@
 
 import React, { useState } from "react";
 
+const tidycalSlug = {
+  "powder-brows": "powderbrows",
+  microblading: "microblading",
+  lips: "pmu-lippen",
+};
+
 const techniques = [
   {
     id: "powder-brows",
@@ -10,7 +16,7 @@ const techniques = [
     description:
       "Powder Brows erzeugen einen gepuderten, natürlichen Look, der von dezent bis definiert reicht. Die Farbe wird gleichmäßig aufgetragen — ideal für alle Hauttypen, besonders für öligere Haut.",
     benefits: ["Natürlicher Tageblick", "Für alle Hauttypen", "Hält 2–3 Jahre"],
-    image: "/images/ai-pmu-eyebrows.jpg",
+    image: "/images/pmu/powderbrows.jpg",
   },
   {
     id: "microblading",
@@ -19,7 +25,7 @@ const techniques = [
     description:
       "Microblading zeichnet einzelne, haarfeine Striche ins Hautbild und schafft so täuschend echte Brauen. Der Effekt ist absolut natürlich — niemand sieht, dass es Permanent Make-up ist.",
     benefits: ["Hyperrealistisch", "Ideal für dünne Brauen", "Hält 1–2 Jahre"],
-    image: "/images/treatment-1.png",
+    image: "/images/pmu/powderbrows-2.jpg",
   },
   {
     id: "lips",
@@ -28,7 +34,7 @@ const techniques = [
     description:
       "Lippenpigmentierung gibt deinen Lippen mehr Volumen, klarere Konturen und eine Farbe, die bleibt — morgens, abends und dazwischen. Ganz ohne Nachziehen.",
     benefits: ["Mehr Definition", "Natürliches Volumen", "Hält 2–4 Jahre"],
-    image: "/images/about-2.png",
+    image: "/images/pmu/lippen.jpg",
   },
 ];
 
@@ -106,7 +112,13 @@ export function Layout502() {
                 </li>
               ))}
             </ul>
-            <a href="/kontakt" className="cb-btn-primary">Jetzt buchen</a>
+            <a
+              href={`https://tidycal.com/contour-beauty/${tidycalSlug[active]}`}
+              data-tidycal-path={`contour-beauty/${tidycalSlug[active]}`}
+              className="cb-btn-primary"
+            >
+              Jetzt buchen
+            </a>
           </div>
           <div className="cb-img-zoom" style={{ borderRadius: "2px", overflow: "hidden" }}>
             <img key={active} src={t.image} alt={t.title}

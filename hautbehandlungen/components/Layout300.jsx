@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { BookingButton } from "../../src/components/BookingButton";
 
 const treatments = [
   {
@@ -50,7 +51,21 @@ export function Layout300() {
             }}>
             Was Reviderm für deine Haut tun kann
           </h2>
-          <a href="/kontakt" className="cb-btn-secondary flex-shrink-0">Alle Behandlungen buchen</a>
+          <BookingButton
+            label="Alle Behandlungen buchen"
+            className="cb-btn-secondary flex-shrink-0"
+            variants={[
+              { label: "Microneedling — Gesicht & Hals", path: "microneedling-perfection-gesicht-and-hals" },
+              { label: "Microneedling — Gesicht, Hals & Dekolleté", path: "microneedling-perfection-gesicht-hals-dekollete" },
+              { label: "Anti-Aging Ritual — Gesicht & Hals", path: "anti-aging-ritual-timeless-contour-gesicht-and-hals" },
+              { label: "Anti-Aging Ritual — Gesicht, Hals & Dekolleté", path: "anti-aging-ritual-timeless-contour-gesicht-hals-dekollete" },
+              { label: "Hydra Calming Facial — Gesicht & Hals", path: "hydra-calming-luxury-facial-fur-trockene-haut-gesicht-and-hals" },
+              { label: "Hydra Calming Facial — Gesicht, Hals & Dekolleté", path: "hydra-calming-luxury-facial-fur-trockene-haut-gesicht-hals-dekollete" },
+              { label: "Glow Solution — Gesicht & Hals", path: "glow-solution-reverse-needling-therapy-apparative-kosmetik" },
+              { label: "Glow Solution — Gesicht, Hals & Dekolleté", path: "glow-solution-reverse-needling-therapy-apparative-kosmetik-2" },
+              { label: "Clarifying Facial Teenager", path: "clarifying-facial-teenager-haut-pure-balance" },
+            ]}
+          />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

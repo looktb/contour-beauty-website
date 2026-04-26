@@ -36,7 +36,13 @@ export function Layout19() {
                 </li>
               ))}
             </ul>
-            <a href="/kontakt" className="cb-btn-primary">Termin vereinbaren</a>
+            <a
+              href="https://tidycal.com/contour-beauty/observ-hautanalyse"
+              data-tidycal-path="contour-beauty/observ-hautanalyse"
+              className="cb-btn-primary"
+            >
+              Termin vereinbaren
+            </a>
           </div>
           <div className="cb-img-zoom" style={{ borderRadius: "2px", overflow: "hidden" }}>
             <img src="/images/hero-1.png" alt="Hautanalyse bei Contour Beauty"

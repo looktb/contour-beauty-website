@@ -3,10 +3,10 @@
 import React from "react";
 
 const gallery = [
-  { src: "/images/pmu-1.png", label: "Powder Brows" },
-  { src: "/images/treatment-1.png", label: "Microblading" },
-  { src: "/images/about-2.png", label: "Lippenpigmentierung" },
-  { src: "/images/gallery-1.png", label: "Kombiniert" },
+  { src: "/images/pmu/powderbrows.jpg", label: "Powder Brows" },
+  { src: "/images/pmu/powderbrows-2.jpg", label: "Powder Brows" },
+  { src: "/images/pmu/lippen.jpg", label: "Lippenpigmentierung" },
+  { src: "/images/pmu/eyeliner.jpg", label: "Eyeliner" },
 ];
 
 export function Layout13() {
@@ -35,7 +35,13 @@ export function Layout13() {
             </p>
           </div>
           <div className="flex gap-4">
-            <a href="/kontakt" className="cb-btn-primary">Termin buchen</a>
+            <a
+              href="https://tidycal.com/contour-beauty/beratungstermin"
+              data-tidycal-path="contour-beauty/beratungstermin"
+              className="cb-btn-primary"
+            >
+              Termin buchen
+            </a>
             <a href="#techniken" className="cb-btn-secondary">Techniken ansehen</a>
           </div>
         </div>

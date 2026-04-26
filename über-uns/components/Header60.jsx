@@ -6,13 +6,13 @@ export function Header60() {
   return (
     <section className="relative h-screen min-h-[580px] flex items-end">
       <div className="absolute inset-0">
-        <img src="/images/about-1.png" className="w-full h-full object-cover object-center"
-          alt="Über Contour Beauty Hamburg" />
+        <img src="/images/studio.png" className="w-full h-full object-cover object-center"
+          alt="Contour Beauty Studio" />
         <div className="absolute inset-0"
           style={{ background: "linear-gradient(to top, rgba(13,11,9,0.78) 0%, rgba(13,11,9,0.25) 60%, rgba(13,11,9,0.05) 100%)" }} />
       </div>
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-8 md:px-12 lg:px-16 pb-20 md:pb-28">
-        <p className="cb-label mb-5" style={{ color: "var(--cb-sand)" }}>Über uns</p>
+        <p className="cb-label mb-5" style={{ color: "var(--cb-sand)" }}>Über mich</p>
         <h1 className="font-display"
           style={{
             fontFamily: "Cormorant Garamond, serif",

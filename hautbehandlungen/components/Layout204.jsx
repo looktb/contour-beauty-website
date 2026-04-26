@@ -45,7 +45,13 @@ export function Layout204() {
 
             <div className="flex flex-wrap gap-4">
               <a href="/permanent-make-up" className="cb-btn-secondary">Permanent Make-up entdecken</a>
-              <a href="/kontakt" className="cb-btn-primary">Termin buchen</a>
+              <a
+                href="https://tidycal.com/contour-beauty"
+                data-tidycal-path="contour-beauty"
+                className="cb-btn-primary"
+              >
+                Termin buchen
+              </a>
             </div>
           </div>
         </div>

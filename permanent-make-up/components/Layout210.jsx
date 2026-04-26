@@ -42,7 +42,13 @@ export function Layout210() {
             </ul>
             <div className="flex flex-wrap gap-4">
               <a href="/hautbehandlungen" className="cb-btn-secondary">Hautbehandlungen</a>
-              <a href="/kontakt" className="cb-btn-primary">Termin buchen</a>
+              <a
+                href="https://tidycal.com/contour-beauty"
+                data-tidycal-path="contour-beauty"
+                className="cb-btn-primary"
+              >
+                Termin buchen
+              </a>
             </div>
           </div>
         </div>
