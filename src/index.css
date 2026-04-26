@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cb-cream: #faf8f4;
+  --cb-charcoal: #1c1917;
+  --cb-sand: #c9a87c;
+  --cb-blush: #e8d0c4;
+  --cb-linen: #f0ebe3;
+  --cb-dark: #0d0b09;
+  --cb-warm: #8b7355;
+  --cb-muted: #6b645c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  background-color: var(--cb-cream);
+  color: var(--cb-charcoal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Relume token overrides ── */
+.bg-background-primary {
+  background-color: var(--cb-cream) !important;
+}
+.border-border-primary {
+  border-color: rgba(28, 25, 23, 0.1) !important;
+}
+.text-text-alternative {
+  color: #faf8f4 !important;
+}
+.bg-neutral-white {
+  background-color: var(--cb-cream) !important;
+}
+
+/* ── Typography helpers ── */
+.font-display {
+  font-family: "Cormorant Garamond", serif;
+}
+.font-body {
+  font-family: "Jost", sans-serif;
+}
+
+/* ── CB Buttons ── */
+.cb-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: var(--cb-charcoal);
+  color: var(--cb-cream);
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--cb-charcoal);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cb-btn-primary:hover {
+  background-color: transparent;
+  color: var(--cb-charcoal);
+}
+
+.cb-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--cb-charcoal);
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--cb-charcoal);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cb-btn-secondary:hover {
+  background-color: var(--cb-charcoal);
+  color: var(--cb-cream);
+}
+
+.cb-btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: var(--cb-cream);
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(250, 248, 244, 0.5);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cb-btn-light:hover {
+  background-color: var(--cb-cream);
+  color: var(--cb-charcoal);
+}
+
+/* ── Divider line ── */
+.cb-divider {
+  width: 2.5rem;
+  height: 1px;
+  background-color: var(--cb-sand);
+  display: block;
+}
+
+/* ── Nav link hover ── */
+.cb-nav-link {
+  position: relative;
+  font-family: "Jost", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cb-charcoal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.cb-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--cb-sand);
+  transition: width 0.3s ease;
+}
+.cb-nav-link:hover::after {
+  width: 100%;
+}
+
+/* ── Animations ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.anim-fade-up {
+  animation: fadeInUp 0.9s ease both;
+}
+.anim-fade {
+  animation: fadeIn 1.2s ease both;
+}
+.anim-scale {
+  animation: scaleIn 1.4s ease both;
+}
+.anim-delay-1 { animation-delay: 0.15s; }
+.anim-delay-2 { animation-delay: 0.3s; }
+.anim-delay-3 { animation-delay: 0.45s; }
+.anim-delay-4 { animation-delay: 0.6s; }
+
+/* ── Image hover zoom ── */
+.cb-img-zoom {
+  overflow: hidden;
+}
+.cb-img-zoom img {
+  transition: transform 0.7s ease;
+}
+.cb-img-zoom:hover img {
+  transform: scale(1.04);
+}
+
+/* ── Section label ── */
+.cb-label {
+  font-family: "Jost", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cb-warm);
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cb-cream); }
+::-webkit-scrollbar-thumb { background: var(--cb-blush); border-radius: 3px; }
